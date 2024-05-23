@@ -10,6 +10,7 @@
     --font-play: "Play", sans-serif;
     --font-code: "Source Code Pro", monospace;
     --font-grotesk: "Space Grotesk", sans-serif;
+    --bg-color-header: rgba(14, 14, 23, 0.7);
 }
 
 * {
