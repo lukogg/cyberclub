@@ -1,32 +1,27 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
-import Home from "./pages/Home";
+import "./styles.css";
 
- 
-function App() {
-    return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route
-                    path="/contact"
-                    element={<Contact />}
-                />
-                <Route path="/blogs" element={<Blogs />} />
-                <Route
-                    path="/sign-up"
-                    element={<SignUp />}
-                />
-            </Routes>
-        </Router>
-    );
-}
- 
+import ButtonOutlineDynamic from "./assets/svg/ButtonOutlineDynamic";
+import Button from "./components/Button";
+import Header from "./components/Header";
+import ButtonSvg from "./assets/svg/ButtonSvg";
+import CardSpecs from "./assets/svg/CardSpecs";
+
+
+
+const App = () => {
+  return (
+    <>
+      {/* <ButtonSvg /> */}
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
+      </div>
+      <div className="mt-20 flex gap-10 justify-center" >
+        <CardSpecs id="1" size={25} />
+        <CardSpecs id="2" size={25} />
+        <CardSpecs id="0" size={25} />
+      </div>
+    </>
+  );
+};
+
 export default App;
