@@ -61,7 +61,10 @@ export default {
         DEFAULT: "200ms",
       },
       transitionTimingFunction: {
-        DEFAULT: "linear",
+        linear: "linear",
+        easeinout: "ease-in-out",
+        easeout: "ease-out",
+        easein: "ease-in",
       },
       zIndex: {
         1: "1",
@@ -73,23 +76,13 @@ export default {
       borderWidth: {
         DEFAULT: "0.0625rem",
       },
-      backgroundImage: {
-        "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
-        "conic-gradient":
-          "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
-        "benefit-card-1": "url(assets/benefits/card-1.svg)",
-        "benefit-card-2": "url(assets/benefits/card-2.svg)",
-        "benefit-card-3": "url(assets/benefits/card-3.svg)",
-        "benefit-card-4": "url(assets/benefits/card-4.svg)",
-        "benefit-card-5": "url(assets/benefits/card-5.svg)",
-        "benefit-card-6": "url(assets/benefits/card-6.svg)",
-      },
     },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
       addComponents({
+        
         ".container": {
           "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
             {},

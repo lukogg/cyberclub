@@ -44,8 +44,8 @@ import {
     },
     {
       id: "1",
-      title: "Pricing",
-      url: "#pricing",
+      title: "Наші Комп'ютери",
+      url: "#specs",
     },
     {
       id: "2",
@@ -54,18 +54,18 @@ import {
     },
     {
       id: "3",
-      title: "Roadmap",
-      url: "#roadmap",
+      title: "Турніри",
+      url: "#tournaments",
     },
     {
       id: "4",
-      title: "New account",
+      title: "Зареєструватись",
       url: "#signup",
       onlyMobile: true,
     },
     {
       id: "5",
-      title: "Sign in",
+      title: "Увійти",
       url: "#login",
       onlyMobile: true,
     },

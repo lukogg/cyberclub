@@ -1,7 +1,8 @@
-const ButtonOutlineDynamic = ({ text,  width = 233, height = 48, color = "#5EF6FF"}) => {
+const ButtonOutlineDynamic = ({ text,  width = 233, height = 48, color = "#5EF6FF", size}) => {
 
   const charWidth = 8;
-  const modWidth = text.length * charWidth;
+  // const modWidth = text.length * charWidth;
+  const modWidth = 0;
   const adjustedWidth = width + modWidth;
 
   const d = `
@@ -20,9 +21,9 @@ const ButtonOutlineDynamic = ({ text,  width = 233, height = 48, color = "#5EF6F
  return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={adjustedWidth}
-      height={height}
+      viewBox="0 0 233 48"
       fill="none"
+      style={{ width: size + "%", height: "auto" }}
     >
       <path stroke={color} d={d} />
       <text

@@ -2,30 +2,21 @@ const ButtonSvg = (white) => (
   <>
     <svg
       className="absolute top-0 left-0"
-      width="73"
-      height="47" // Adjusted height to accommodate the full figure
-      viewBox="0 0 73 47"
+      width="21"
+      height="44"
+      viewBox="0 0 21 44"
     >
       <path
         fill={white ? "white" : "none"}
-        stroke={white ? "white" : "url(#btn-left)"}
+        stroke={white ? "white" : "url(#btn-left)"} // mentioned in ButtonGradient.jsx
         strokeWidth="2"
-        d="
-          M60,0 
-          h-60 
-          v22 
-          h13 
-          v3 
-          h-13 
-          v22 
-          h60
-        "
+        d="M21,43.00005 L8.11111,43.00005 C4.18375,43.00005 1,39.58105 1,35.36365 L1,8.63637 C1,4.41892 4.18375,1 8.11111,1 L21,1"
       />
     </svg>
     <svg
       className="absolute top-0 left-[1.3125rem] w-[calc(100%-2.625rem)]"
-      height="47" // Adjusted height to 47 to accommodate the new figure
-      viewBox="0 0 100 47"
+      height="44"
+      viewBox="0 0 100 44"
       preserveAspectRatio="none"
       fill={white ? "white" : "none"}
     >
@@ -33,75 +24,35 @@ const ButtonSvg = (white) => (
         <polygon
           fill="white"
           fillRule="nonzero"
-          points="100 0 100 47 0 47 0 0"
+          points="100 0 100 44 0 44 0 0"
         />
       ) : (
         <>
           <polygon
-            fill="url(#btn-top)"
+            fill="url(#btn-top)" // mentioned in ButtonGradient.jsx
             fillRule="nonzero"
-            points="100 45 100 47 0 47 0 45"
+            points="100 42 100 44 0 44 0 42"
           />
           <polygon
-            fill="url(#btn-bottom)"
+            fill="url(#btn-bottom)" // mentioned in ButtonGradient.jsx
             fillRule="nonzero"
             points="100 0 100 2 0 2 0 0"
-          />
-          <polygon
-            fill="url(#btn-line-top)"
-            fillRule="nonzero"
-            points="100 0 100 1 0 1 0 0"
-          />
-          <polygon
-            fill="url(#btn-line-bottom)"
-            fillRule="nonzero"
-            points="100 46 100 47 0 47 0 46"
           />
         </>
       )}
     </svg>
     <svg
-      className="absolute top-0 left-[1.3125rem] w-[calc(100%-2.625rem)]"
-      height="47"
-      viewBox="0 0 100 47"
-      preserveAspectRatio="none"
-      fill={white ? "white" : "none"}
+      className="absolute top-0 right-0"
+      width="21"
+      height="44"
+      viewBox="0 0 21 44"
     >
-      {white ? (
-        <polygon
-          fill="white"
-          fillRule="nonzero"
-          points="60 47 60 17 77 17 77 0 17 0"
-        />
-      ) : (
-        <>
-          <path
-            fill="url(#btn-gradient)"
-            fillRule="nonzero"
-            d="M0 47 L60 47 L60 17 L77 17 L77 0 L17 0 Z"
-          />
-          <polygon
-            fill="url(#btn-top)"
-            fillRule="nonzero"
-            points="100 45 100 47 0 47 0 45"
-          />
-          <polygon
-            fill="url(#btn-bottom)"
-            fillRule="nonzero"
-            points="100 0 100 2 0 2 0 0"
-          />
-          <polygon
-            fill="url(#btn-line-top)"
-            fillRule="nonzero"
-            points="100 0 100 1 0 1 0 0"
-          />
-          <polygon
-            fill="url(#btn-line-bottom)"
-            fillRule="nonzero"
-            points="100 46 100 47 0 47 0 46"
-          />
-        </>
-      )}
+      <path
+        fill={white ? "white" : "none"}
+        stroke={white ? "white" : "url(#btn-right)"} // mentioned in ButtonGradient.jsx
+        strokeWidth="2"
+        d="M0,43.00005 L5.028,43.00005 L12.24,43.00005 C16.526,43.00005 20,39.58105 20,35.36365 L20,16.85855 C20,14.59295 18.978,12.44425 17.209,10.99335 L7.187,2.77111 C5.792,1.62675 4.034,1 2.217,1 L0,1"
+      />
     </svg>
   </>
 );

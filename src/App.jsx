@@ -1,21 +1,32 @@
-import ButtonOutlineDynamic from "./assets/svg/ButtonOutlineDynamic";
-import Button from "./components/Button";
-import Header from "./components/Header";
-import ButtonSvg from "./assets/svg/ButtonSvg";
+import React from "react";
+import Navbar from "./components/Navbar";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
+import Home from "./pages/Home";
 
-const App = () => {
-  return (
-    <>
-      {/* <ButtonSvg /> */}
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header />
-      </div>
-      <ButtonOutlineDynamic text="hello" />
-      <Button>
-        Button
-      </Button>
-    </>
-  );
-};
-
+ 
+function App() {
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route
+                    path="/contact"
+                    element={<Contact />}
+                />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route
+                    path="/sign-up"
+                    element={<SignUp />}
+                />
+            </Routes>
+        </Router>
+    );
+}
+ 
 export default App;
