@@ -76,6 +76,7 @@ export default {
       borderWidth: {
         DEFAULT: "0.0625rem",
       },
+      
     },
   },
   plugins: [

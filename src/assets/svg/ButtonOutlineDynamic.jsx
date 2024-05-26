@@ -1,5 +1,6 @@
-const ButtonOutlineDynamic = ({ text,  width = 233, height = 48, color = "#5EF6FF", size}) => {
+const ButtonOutlineDynamic = ({ text,  width = 233, height = 48, color = "#5EF6FF", size, className}) => {
 
+  const classes = className
   const charWidth = 8;
   // const modWidth = text.length * charWidth;
   const modWidth = 0;
@@ -32,8 +33,9 @@ const ButtonOutlineDynamic = ({ text,  width = 233, height = 48, color = "#5EF6F
         dominantBaseline="middle"
         textAnchor="middle"
         fill={color}
-        fontSize="18"
+        fontSize="20"
         fontFamily="var(--font-play)"
+        fontWeight="semibold"
       >
         {text}
       </text>

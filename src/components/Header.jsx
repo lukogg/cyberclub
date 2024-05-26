@@ -26,7 +26,10 @@ const Header = () => {
     <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-small'}`}>
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8">
-          <img src={cyber} width={250} height={104} alt="Cyber" />
+          <img src={cyber}
+          className="w-24 h-auto sm:w-20 sm:h-auto md:w-28 md:h-auto lg:w-32 lg:h-auto xl:w-36 xl:h-auto transition-transform duration-300 ease-in-out transform hover:scale-95"
+          alt="Cyber"
+          />
         </a>
         <nav className={`${openNavigation ? 'flex' : 'hidden'} fixed top-[5-rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
@@ -45,9 +48,9 @@ const Header = () => {
           </div>
           <HamburgerMenu />
         </nav>
-          <a>
+          <a className="flex flex-col gap-1">
         <Button className="hidden lg:flex" href="#signup">
-          <ButtonOutlineDynamic text="Зареєструватись" size={60} />
+          <ButtonOutlineDynamic text="Зареєструватись" size={60}/>
         </Button>
 
         <Button className="hidden lg:flex" href="#login">
