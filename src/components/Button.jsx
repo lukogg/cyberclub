@@ -1,22 +1,76 @@
-const Button = ({ className, href, onClick, children }) => {
-  const classes = `relative inline-flex items-center justify-center transition-colors hover:text-color-1 text-n-1 ${className}`;
-  const spanClasses = "relative z-10";
+const Button = ({ className, href, onClick, children, textColor, outlineColor, size }) => {
+  const defaultWidth = 233;
+  const defaultHeight = 48;
+  const width = (defaultWidth / 100) * (size ? size : 100);
+  const height = (defaultHeight / 100) * (size ? size : 100);
 
-  const handleClick = (event) => {
-    if (!href) {
-      onClick && onClick(event);
-    }
-  };
+  const currentColor = "#5EF6FF";
+  const d = `
+    M${13} ${22}
+    v${3}
+    H${1}
+    v${22}
+    h${214.5}
+    L${232} ${29.5}
+    V${0}
+    H${1}
+    v${22}
+    z
+  `;
 
   const renderButton = () => (
-    <button className={classes} onClick={handleClick}>
-      <span className={spanClasses}>{children}</span>
+    <button
+      className={`relative inline-block ${className}`}
+      onClick={onClick}
+      style={{ width: `${width}px`, height: `${height}px`, padding: 0, border: 'none', background: 'none', cursor: 'pointer' }}
+    >
+      <svg
+        viewBox={`0 0 ${defaultWidth} ${defaultHeight}`} // Keep the viewBox fixed to the default width and height
+        fill="none"
+        className="block"
+        style={{ width: '100%', height: '100%' }} // Use CSS to control the size
+      >
+        <path stroke={outlineColor ? outlineColor : currentColor} d={d} />
+        <text
+          x="50%"
+          y="50%"
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fontFamily="var(--font-play)"
+          fontSize="16"
+          fill={textColor ? textColor : currentColor}
+        >
+          {children}
+        </text>
+      </svg>
     </button>
   );
 
   const renderLink = () => (
-    <a href={href} className={classes} onClick={handleClick}>
-      <span className={spanClasses}>{children}</span>
+    <a
+      href={href}
+      className={`relative inline-block ${className}`}
+      style={{ width: `${width}px`, height: `${height}px`, padding: 0, border: 'none', background: 'none', textDecoration: 'none' }}
+    >
+      <svg
+        viewBox={`0 0 ${defaultWidth} ${defaultHeight}`} // Keep the viewBox fixed to the default width and height
+        fill="none"
+        className="block"
+        style={{ width: '100%', height: '100%' }} // Use CSS to control the size
+      >
+        <path stroke={outlineColor ? outlineColor : currentColor} d={d} />
+        <text
+          x="50%"
+          y="50%"
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fontFamily="var(--font-play)"
+          fontSize="16"
+          fill={textColor ? textColor : currentColor}
+        >
+          {children}
+        </text>
+      </svg>
     </a>
   );
 

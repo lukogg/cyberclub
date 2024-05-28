@@ -46,19 +46,16 @@ const CardSpecs = ({id, size}) => {
             <text x={39} y={68} font-size="11" letter-spacing={-0.64} fill="#F75049">
             {spec && spec.Backstory}
             </text>
-            <text x={39} y={112} font-size="11" letter-spacing={-0.64} fill="#F75049">
-            {spec && spec.Room}
+            <text x={61} y={94} font-size="17" letter-spacing={-0.64} fill="#5EF6FF">
+            {spec && spec.BackstoryTitle}
             </text>
-            <text x={61} y={136} font-size="17" letter-spacing={-0.64} fill="#5EF6FF">
-            {spec && spec.RoomTitle}
-            </text>
-            <text x={38} y={90} font-size="12" letter-spacing={-0.64} fill="#5EF6FF">
+            <text x={38} y={116} font-size="12" letter-spacing={-0.64} fill="#5EF6FF">
             {spec && spec.BackstoryDescription}
             </text>
-            <text x={39} y={161} font-size="11" letter-spacing={-0.64} fill="#F75049">
+            <text x={39} y={148} font-size="11" letter-spacing={-0.64} fill="#F75049">
             {spec && spec.Difficulty}
             </text>
-            <text x={38} y={180} font-size="12" letter-spacing={-0.64} fill="#5EF6FF">
+            <text x={38} y={167} font-size="12" letter-spacing={-0.64} fill="#5EF6FF">
             {spec && spec.DifficultyDescription}
             </text>
             <text x={39} y={211} font-size="11" letter-spacing={-0.64} fill="#F75049">
@@ -102,13 +99,12 @@ const CardSpecs = ({id, size}) => {
             </text>
             <line x1={39} y1={25} x2={344} y2={25} stroke="#F75049" strokeWidth={1}></line>
             <line x1={39} y1={71} x2={344} y2={71} stroke="#F75049" strokeWidth={1}></line>
-            <line x1={39} y1={165} x2={344} y2={165} stroke="#F75049" strokeWidth={1}></line>
+            <line x1={39} y1={152} x2={344} y2={152} stroke="#F75049" strokeWidth={1}></line>
             <line x1={39} y1={215} x2={344} y2={215} stroke="#F75049" strokeWidth={1}></line>
-            <line x1={39} y1={115} x2={344} y2={115} stroke="#F75049" strokeWidth={1}></line>
             <image
                 href={spec && spec.logo}
                 x={39}
-                y={122}
+                y={80}
                 width={18}
                 height={18}
                 />
