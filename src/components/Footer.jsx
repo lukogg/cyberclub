@@ -13,8 +13,8 @@ const Footer = () => {
                 alt="Cyber"
                 />
             </a>
-          <p className="mt-5 text-sm text-center">Ми в соцмережах:</p>
-          <div className="mt-2 mb-2 flex gap-3 justify-center">
+          <p className="mt-2 text-sm text-center">Ми в соцмережах:</p>
+          <div className="mt-2 flex gap-3 justify-center">
             <a href="#instagram"><img src={instagram}
                 alt="Instagram"
                 className="transition-transform duration-300 ease-in-out transform hover:scale-150"
@@ -36,23 +36,23 @@ const Footer = () => {
         
             <div className="flex flex-col items-start">
             <a className="text-lg text-color-2">ПРО КЛУБ</a>
-            <a href="#" className="text-sm hover:text-color-1">Про нас</a>
-            <a href="#" className="text-sm hover:text-color-1">Ціни</a>
-            <a href="#" className="text-sm hover:text-color-1">Список ігор</a>
-            <a href="#" className="text-sm hover:text-color-1">Галерея</a>
-            <a href="#" className="text-sm hover:text-color-1">Контакти</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Про нас</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Ціни</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Список ігор</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Галерея</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Контакти</a>
             </div>
             <div className="flex flex-col items-start">
             <a className="text-lg text-color-2">ЗОНИ</a>
-            <a href="#" className="text-sm hover:text-color-1">Кочівник</a>
-            <a href="#" className="text-sm hover:text-color-1">Дитя вулиць</a>
-            <a href="#" className="text-sm hover:text-color-1">Корпар</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Кочівник</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Дитя вулиць</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Корпар</a>
             </div>
             <div className="flex flex-col items-start">
             <a className="text-lg text-color-2">ДОДАТКОВО</a>
-            <a href="#" className="text-sm hover:text-color-1">Новини</a>
-            <a href="#" className="text-sm hover:text-color-1">Правила клубу</a>
-            <a href="#" className="text-sm hover:text-color-1">Політика конфіденційності</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Новини</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Правила клубу</a>
+            <a href="#" className="text-sm transition-colors hover:text-color-1">Політика конфіденційності</a>
             </div>
         </div>
       

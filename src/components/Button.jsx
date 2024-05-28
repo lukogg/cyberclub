@@ -20,7 +20,7 @@ const Button = ({ className, href, onClick, children, textColor, outlineColor, s
 
   const renderButton = () => (
     <button
-      className={`relative inline-block ${className}`}
+      className={`relative inline-block${className}`}
       onClick={onClick}
       style={{ width: `${width}px`, height: `${height}px`, padding: 0, border: 'none', background: 'none', cursor: 'pointer' }}
     >

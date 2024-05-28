@@ -1,4 +1,5 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link} from "react-router-dom";
+
 
 import cyber from "../assets/cyber.svg";
 import { navigation } from "../constants";
@@ -27,7 +28,7 @@ const Header = () => {
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8 " href="/">
           <img src={cyber}
-          className="w-24 h-auto sm:w-20 sm:h-auto md:w-28 md:h-auto lg:w-32 lg:h-auto xl:w-36 xl:h-auto transition-transform duration-300 ease-in-out transform hover:scale-95"
+          className="w-24 h-auto sm:w-20 sm:h-auto md:w-28 md:h-auto lg:w-32 lg:h-auto xl:w-36 xl:h-auto hover:scale-95 transition-transform duration-500"
           alt="Cyber"
           />
         </a>
@@ -49,11 +50,8 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
           <a className="flex flex-col gap-1">
-        <Button className="hidden lg:flex" href="#signup" size="80">
-          Зареєструватись
-        </Button>
 
-        <Button className="hidden lg:flex" href="#login" size="80">
+        <Button className="hidden lg:flex hover:scale-95 transition-transform duration-500" href="login">
           Увійти
         </Button>
           </a>
