@@ -18,7 +18,7 @@ export const specifications = [
       ReflexText: "RTX 4090",
       ReflexValue: "GPU",
       TechAbilText: "",
-      TechAbilValue: "SSD",
+      TechAbilValue: "ОКРЕМА КІМНАТА",
       CoolText: "",
       CoolValue: "",
     },
@@ -41,7 +41,7 @@ export const specifications = [
       ReflexText: "RTX 4060 Ti",
       ReflexValue: "GPU",
       TechAbilText: "",
-      TechAbilValue: "SSD",
+      TechAbilValue: "ЗАГАЛЬНИЙ ЗАЛ",
       CoolText: "",
       CoolValue: "",
     },
@@ -64,8 +64,34 @@ export const specifications = [
       ReflexText: "RTX 4080",
       ReflexValue: "GPU",
       TechAbilText: "",
-      TechAbilValue: "SSD",
+      TechAbilValue: "ОКРЕМА КІМНАТА",
       CoolText: "",
-      CoolValue: "",
+      CoolValue: "ДЛЯ 5 ГРАВЦІВ",
     },
+]
+
+export const peripheralsCol1 = ['Монітор', 'Миша', 'Клавіатура', 'Гарнітура', 'Крісло']
+
+export const peripheralsCol2Nomad = [
+  "Asus 24' 165 Hz",
+  'Hator Vortex EVO',
+  'Hator Rockfall EVO TKL',
+  'Hator Hypergang EVO',
+  'Hator Sport Essential',
+]
+
+export const peripheralsCol2Streetkid = [
+  "Asus 24' 165 Hz",
+  'Razer Death Adder V2',
+  'Razer BlackWidow V3 TKL',
+  'Razer Black Shark V2 X',
+  'Hator Sport Essential',
+]
+
+export const peripheralsCol2Corpo = [
+  "Asus 27' 280 Hz",
+  'HyperX Pulsefire Surge',
+  'HyperX Alloy Origins',
+  'HyperX Alpha S',
+  'DX Racer D8100',
 ]

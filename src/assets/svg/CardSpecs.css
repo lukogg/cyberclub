@@ -1,0 +1,27 @@
+.CardSpecsTitle{
+    fill: #F75049;
+    color: #F75049;
+    letter-spacing: -0.64px;
+    font-size: 13px;
+}
+
+.CardSpecsDesc{
+    fill: #5EF6FF;
+    color: #5EF6FF;
+    letter-spacing: -0.64px;
+    font-size: 15px;
+}
+
+.CardSpecsDescLarge{
+    fill: #5EF6FF;
+    color: #5EF6FF;
+    letter-spacing: -0.64px;
+    font-size: 18.5px;
+}
+
+.CardSpecsTech{
+    fill: #F75049;
+    color: #F75049;
+    letter-spacing: -0.64px;
+    font-size: 18px;
+}

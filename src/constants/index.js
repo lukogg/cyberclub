@@ -7,29 +7,23 @@
     },
     {
       id: "1",
-      title: "Зони",
-      url: "rooms",
-    },
-    {
-      id: "2",
       title: "Ігри",
       url: "games",
     },
+    // {
+    //   id: "2",
+    //   title: "Турніри",
+    //   url: "tournaments",
+    // },
     {
       id: "3",
-      title: "Турніри",
-      url: "tournaments",
+      title: "Галерея",
+      url: "gallery",
     },
     {
       id: "4",
-      title: "Зареєструватись",
-      url: "signup",
-      onlyMobile: true,
-    },
-    {
-      id: "4",
-      title: "Увійти",
-      url: "login",
+      title: "Забронювати",
+      url: "#call_me",
       onlyMobile: true,
     },
   ];

@@ -13,7 +13,7 @@ export default {
       colors: {
         color: {
           1: "#F75049", //  Primary Color #1 (Red)
-          2: "#5EF6FF", //  Primary Color #2 (Cian)
+          2: "#5EF6FF", //  Primary Color #2 (Cyan)
           3: "#1DED83", //  Secondary Color #1 (Green)
           4: "#2570D4", //  Secondary Color #2 (Blue)
           5: "#2570D4", //  Secondary Color #3 (Purple)

@@ -1,5 +1,6 @@
 import CardSpecsOutline from "../svg/CardSpecsOutline"
 import CardSpecsBackground from "../svg/CardSpecsBackground";
+import "./CardSpecs.css";
 
 import AttentionIcon from "../svg/icons/AttentionIcon";
 import atlas_death_screen from "../atlas_death_screen.png";
@@ -25,73 +26,64 @@ const CardSpecs = ({id, size}) => {
             height: "auto",
         }}
     >
-            <style>
-            {`
-                text {
-                font-family: var(--font-play);
-                // font-weight: normal;
-                // fill: #5EF6FF;
-                }
-            `}
-            </style>
             <CardSpecsBackground />
             <CardSpecsOutline />
             <AttentionIcon x={282} y={268} />
-            <text x={39} y={22} font-size="11" letter-spacing={-0.64} fill="#F75049">
+            <text x={39} y={22} className="CardSpecsTitle">
             {spec && spec.NameTitle}
             </text>
-            <text x={39} y={40} font-size="12" letter-spacing={-0.64} fill="#5EF6FF">
+            <text x={39} y={40} className="CardSpecsDesc">
             {spec && spec.NameDescription}
             </text>
-            <text x={39} y={68} font-size="11" letter-spacing={-0.64} fill="#F75049">
+            <text x={39} y={68} className="CardSpecsTitle">
             {spec && spec.Backstory}
             </text>
-            <text x={39} y={112} font-size="11" letter-spacing={-0.64} fill="#F75049">
+            <text x={39} y={112} className="CardSpecsTitle">
             {spec && spec.Room}
             </text>
-            <text x={61} y={136} font-size="17" letter-spacing={-0.64} fill="#5EF6FF">
+            <text x={61} y={136} className="CardSpecsDescLarge">
             {spec && spec.RoomTitle}
             </text>
-            <text x={38} y={90} font-size="12" letter-spacing={-0.64} fill="#5EF6FF">
+            <text x={38} y={90} className="CardSpecsDesc">
             {spec && spec.BackstoryDescription}
             </text>
-            <text x={39} y={161} font-size="11" letter-spacing={-0.64} fill="#F75049">
+            <text x={39} y={161} className="CardSpecsTitle">
             {spec && spec.Difficulty}
             </text>
-            <text x={38} y={180} font-size="12" letter-spacing={-0.64} fill="#5EF6FF">
+            <text x={38} y={180} className="CardSpecsDesc">
             {spec && spec.DifficultyDescription}
             </text>
-            <text x={39} y={211} font-size="11" letter-spacing={-0.64} fill="#F75049">
+            <text x={39} y={211} className="CardSpecsTitle">
             {spec && spec.AttributesTitle}
             </text>
-            <text x={77} y={239} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={77} y={239} className="CardSpecsTech">
             {spec && spec.BodyValue}
             </text>
-            <text x={115} y={239} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={122} y={239} className="CardSpecsTech">
             {spec && spec.BodyText}
             </text>
-            <text x={77} y={259} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={77} y={259} className="CardSpecsTech">
             {spec && spec.IntelligenceValue}
             </text>
-            <text x={115} y={259} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={122} y={259} className="CardSpecsTech">
             {spec && spec.IntelligenceText}
             </text>
-            <text x={77} y={280} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={77} y={280} className="CardSpecsTech">
             {spec && spec.ReflexValue}
             </text>
-            <text x={115} y={280} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={122} y={280} className="CardSpecsTech">
             {spec && spec.ReflexText}
             </text>
-            <text x={77} y={301} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={77} y={301} className="CardSpecsTech">
             {spec && spec.TechAbilValue}
             </text>
-            <text x={115} y={301} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={122} y={301} className="CardSpecsTech">
             {spec && spec.TechAbilText}
             </text>
-            <text x={77} y={323} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={77} y={321} className="CardSpecsTech">
             {spec && spec.CoolValue}
             </text>
-            <text x={115} y={323} font-size="15" letter-spacing={-0.64} fill="#F75049">
+            <text x={122} y={321} className="CardSpecsTech">
             {spec && spec.CoolText}
             </text>
             <text x={251} y={305} font-size="11" letter-spacing={-0.64} fill="#F75049">
