@@ -15,27 +15,53 @@ import Rules from './pages/Rules.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "cyberclub/",
     element: <Home />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "specs",
-    element: <Specs />,
-  },
-  {
-    path: "games",
-    element: <Games />,
-  },
-  {
-    path: "gallery",
-    element: <Gallery />,
-  },
-  {
-    path: "rules",
-    element: <Rules />,
+    children: [
+      {
+        path: "cyberclub/specs",
+        element: <Specs />,
+      },
+      {
+        path: "cyberclub/games",
+        element: <Games />,
+      },
+      {
+        path: "cyberclub/gallery",
+        element: <Gallery />,
+      },
+      {
+        path: "cyberclub/rules",
+        element: <Rules />,
+      },
+    ]
   },
 ]);
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//     errorElement: <ErrorPage />,
+//   },
+//   {
+//     path: "specs",
+//     element: <Specs />,
+//   },
+//   {
+//     path: "games",
+//     element: <Games />,
+//   },
+//   {
+//     path: "gallery",
+//     element: <Gallery />,
+//   },
+//   {
+//     path: "rules",
+//     element: <Rules />,
+//   },
+// ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
