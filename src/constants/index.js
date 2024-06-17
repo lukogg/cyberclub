@@ -10,11 +10,6 @@
       title: "Ігри",
       url: "games",
     },
-    // {
-    //   id: "2",
-    //   title: "Турніри",
-    //   url: "tournaments",
-    // },
     {
       id: "3",
       title: "Галерея",
@@ -23,8 +18,8 @@
     {
       id: "4",
       title: "Забронювати",
-      url: "#call_me",
       onlyMobile: true,
+      popup: true,
     },
   ];
   

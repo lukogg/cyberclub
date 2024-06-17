@@ -3,8 +3,8 @@ import { facebook, telegram, instagram } from "../assets";
 
 const Footer = () => {
   return (
-    <footer className="hidden lg:flex justify-center bottom-0 left-0 w-full z-20 border-t border-n-6 bg-n-8">
-      <div className="container ml-40 mr-40 mt-15 mb-15 mx-auto flex justify-around">
+    <footer className="flex justify-center bottom-0 left-0 w-full z-20 border-t border-n-6 bg-n-8">
+      <div className="container gap-6 lg:gap-0 ml-40 mr-40 mt-15 mb-15 mx-auto flex justify-around">
         <div className="">
             <a href="#" >
                 <img src={cyber}

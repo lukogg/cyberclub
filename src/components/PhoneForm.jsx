@@ -6,8 +6,10 @@ export default function PhoneForm() {
   const [value, setValue] = useState()
   return (
     <PhoneInput
-      country="ua"
+      country="UA"
+      defaultCountry='UA'
       value={value}
+      placeholder="Ваш номер телефону"
       onChange={setValue} />
   )
 }

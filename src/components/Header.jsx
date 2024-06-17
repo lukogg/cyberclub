@@ -25,9 +25,18 @@ const Header = () => {
     }
   };
 
-  const handleClick = () => {
-    setOpenNavigation(false);
+  const handleClick = (item) => {
+    if (item.popup) 
+    {
+      setButtonPopup(true);
+      setOpenNavigation(false);
+    }
+    else
+    {
+      setOpenNavigation(false);
+    }
   }
+
   return (
     <div className={`fixed noselect top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-small'}`}>
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -43,7 +52,7 @@ const Header = () => {
             <a
               key={item.id}
               href={item.url}
-              onClick={handleClick}
+              onClick={() => handleClick(item)}
               className={`block relative font-play text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                 item.onlyMobile ? "lg:hidden" : ``
               } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-lg ${item.url === lastSegment ? 'z-2 lg:text-color-1/80' : 'lg:text-color-9'} lg:leading-5 lg:hover:text-color-1 xl:px-12`}

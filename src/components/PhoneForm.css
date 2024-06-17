@@ -1,3 +1,15 @@
 .PhoneInput{
     color: black;
 }
+
+.PhoneInputInternationalIconPhone {
+    color: #5EF6FF;
+}
+
+.PhoneInputInternationalIconGlobe {
+    color: #5EF6FF;
+}
+
+.PhoneInputCountrySelectArrow {
+    color: #5EF6FF;
+}

@@ -14,8 +14,8 @@ const App = () => {
 
       <div className="text-color-9">
   
-        <div className="flex mt-16 mb-16 ml-8 ">
-          <div className="relative flex flex-col gap-5 mr-8">
+        <div className="flex flex-col-reverse lg:flex-row items-center mt-8 lg:mt-16 mb-12 lg:mb-16 lg:ml-8 lg:mr-8 ml-6 mr-6">
+          <div className="shrink-0 relative flex flex-row lg:flex-col gap-8 lg:gap-6 lg:mt-0 mt-8 mr-8">
   
             <a href="https://instagram.com">
               <img
@@ -43,10 +43,10 @@ const App = () => {
             </a>
           </div>
           <div className="ml-6 mr-6 flex flex-col justify-start">
-            <h1 className="pb-6 text-6xl">
+            <h1 className="pb-6 lg:text-7xl text-5xl">
               Комп'ютерний клуб Cyber на Печерській
             </h1>
-            <div className="text-lg">
+            <div className="lg:text-3xl text-2xl text-pretty">
               Приходь і грай на потужних комп'ютерах за найкращими цінами у Києві!
             </div>
           </div>
@@ -54,8 +54,8 @@ const App = () => {
   
   
         <DividerText text="Чому до нас?" />
-        <div className="mt-8 mb-8 ml-16 flex flex-col justify-start">
-          <ul className="list-disc ml-5 text-xl">
+        <div className="mt-8 mb-8 lg:ml-16 lg:mr-16 ml-6 mr-6  flex flex-col justify-start">
+          <ul className="list-disc ml-5 lg:text-2xl text-xl">
             <li className="mb-4">Сучасні потужні комп'ютери</li>
             <li className="mb-4">Комфортні місця для гри</li>
             <li className="mb-4">Безкоштовний Wi-Fi</li>
@@ -65,7 +65,7 @@ const App = () => {
         </div>
   
         <DividerText text="Cпеціальні пропозиції" />
-        <div className="mt-8 mb-8 ml-16 flex flex-col justify-start text-xl">
+        <div className="mt-8 mb-8 lg:ml-16 lg:mr-16 ml-6 mr-6 flex flex-col justify-start lg:text-2xl text-xl text-pretty">
           <p className="mb-4">Щовівторка знижка 50% для всіх відвідувачів</p>
           <p className="mb-4">Безкоштовна перша година гри для нових клієнтів</p>
           <p className="mb-4">Щомісячні турніри з цінними призами</p>
@@ -74,7 +74,7 @@ const App = () => {
   
         <div className="anchor-offset" id="about_us">
           <DividerText text="Про нас"/>
-          <div className="mt-8 mb-8 ml-16 flex flex-col justify-start text-xl" >
+          <div className="mt-8 mb-8 lg:ml-16 lg:mr-16 ml-6 mr-6 flex flex-col justify-start lg:text-2xl text-xl text-pretty" >
             <p className="mb-4">
               Cyber Club - це місце, де кожен геймер може знайти щось для себе. Наш клуб обладнаний найновішими комп'ютерами та ігровими приставками, що дозволяє зануритись у світ гри з головою.
             </p>
@@ -85,10 +85,10 @@ const App = () => {
         </div>
   
         <DividerText text="Зв'язок з нами" />
-        <div className="mt-8 mb-8 ml-16 flex flex-col justify-start">
-          <p className="text-lg mb-4">Телефон: +38 (044) 123-45-67</p>
-          <p className="text-lg mb-4">Електронна пошта: info@cyberclub.ua</p>
-          <p className="text-lg mb-4">Адреса: м. Київ, вул. Немировича-Данченка, 2</p>
+        <div className="mt-8 mb-8 lg:ml-16 lg:mr-16 ml-6 mr-6 flex flex-col justify-start">
+          <p className="lg:text-2xl text-xl mb-4">Телефон: +38 (044) 123-45-67</p>
+          <p className="lg:text-2xl text-xl mb-4">Електронна пошта: info@cyberclub.ua</p>
+          <p className="lg:text-2xl text-xl mb-4">Адреса: м. Київ, вул. Немировича-Данченка, 2</p>
         </div>
   
       </div>
