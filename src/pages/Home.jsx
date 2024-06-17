@@ -11,7 +11,6 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
       </div>
-
       <div className="text-color-9">
   
         <div className="flex flex-col-reverse lg:flex-row items-center mt-8 lg:mt-16 mb-12 lg:mb-16 lg:ml-8 lg:mr-8 ml-6 mr-6">
