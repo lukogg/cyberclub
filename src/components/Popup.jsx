@@ -1,15 +1,12 @@
 import "./Popup.css"
 import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
 import Button from "./Button"
-import { useEffect, useState } from "react"
 import PhoneForm from "./PhoneForm"
 
 export default function Popup(props) {
   
   return (props.trigger) ? (
     <div className="popup">
-
       <div className="popup-inner ">
       <div className="flex flex-col-reverse">
         <div className="flex justify-center gap-6">

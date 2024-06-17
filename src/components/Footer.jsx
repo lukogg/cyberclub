@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="flex justify-center bottom-0 left-0 w-full z-20 border-t border-n-6 bg-n-8">
       <div className="container gap-6 lg:gap-0 ml-40 mr-40 mt-15 mb-15 mx-auto flex justify-around">
-        <div className="">
+        <div>
             <a href="#" >
                 <img src={cyber}
                 className="noselect w-24 h-auto sm:w-16 sm:h-auto md:w-24 md:h-auto lg:w-28 lg:h-auto xl:w-32 xl:h-auto
@@ -31,7 +31,6 @@ const Footer = () => {
                 />
             </a>
           </div>
-          {/* <p className="mt-10 text-sm text-center">© 2024 Cyber</p> */}
         </div>
         
             <div className="flex flex-col items-start">
@@ -49,11 +48,9 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-start">
             <a className=" pb-0.5 text-lg text-color-2">ДОДАТКОВО</a>
-            {/* <a href="#" className="text-sm transition-colors hover:text-color-1">Новини</a> */}
             <a href="/rules#rules" className="text-sm transition-colors hover:text-color-1">Правила клубу</a>
-            {/* <a href="rules#privacypolicy" className="text-sm transition-colors hover:text-color-1">Політика конфіденційності</a> */}
             </div>
-        </div>
+      </div>
       
     </footer>
   );

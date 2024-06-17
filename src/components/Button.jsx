@@ -1,8 +1,8 @@
 const Button = ({ className, href, onClick, children, textColor, outlineColor, size }) => {
-  const defaultWidth = 233;
-  const defaultHeight = 48;
-  const width = (defaultWidth / 100) * (size ? size : 100);
-  const height = (defaultHeight / 100) * (size ? size : 100);
+    const defaultWidth = 233;
+    const defaultHeight = 48;
+    const width = (defaultWidth / 100) * (size ? size : 100);
+    const height = (defaultHeight / 100) * (size ? size : 100);
 
   const currentColor = "#5EF6FF";
   const d = `
@@ -25,10 +25,10 @@ const Button = ({ className, href, onClick, children, textColor, outlineColor, s
       style={{ width: `${width}px`, height: `${height}px`, padding: 0, border: 'none', background: 'none', cursor: 'pointer' }}
     >
       <svg
-        viewBox={`0 0 ${defaultWidth} ${defaultHeight}`} // Keep the viewBox fixed to the default width and height
+        viewBox={`0 0 ${defaultWidth} ${defaultHeight}`}
         fill="none"
         className="block"
-        style={{ width: '100%', height: '100%' }} // Use CSS to control the size
+        style={{ width: '100%', height: '100%' }}
       >
         <path stroke={outlineColor ? outlineColor : currentColor} d={d} />
         <text
@@ -53,10 +53,10 @@ const Button = ({ className, href, onClick, children, textColor, outlineColor, s
       style={{ width: `${width}px`, height: `${height}px`, padding: 0, border: 'none', background: 'none', textDecoration: 'none' }}
     >
       <svg
-        viewBox={`0 0 ${defaultWidth} ${defaultHeight}`} // Keep the viewBox fixed to the default width and height
+        viewBox={`0 0 ${defaultWidth} ${defaultHeight}`}
         fill="none"
         className="block"
-        style={{ width: '100%', height: '100%' }} // Use CSS to control the size
+        style={{ width: '100%', height: '100%' }}
       >
         <path stroke={outlineColor ? outlineColor : currentColor} d={d} />
         <text

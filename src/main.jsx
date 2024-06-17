@@ -1,11 +1,8 @@
+import './index.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home.jsx'
-import './index.css'
 import ErrorPage from "./pages/error-page.jsx";
 import Specs from './pages/Specs.jsx';
 import Games from './pages/Games.jsx';

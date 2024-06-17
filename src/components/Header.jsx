@@ -1,4 +1,4 @@
-import { useLocation, Link} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "../styles.css"
 
 import Popup from "./Popup";
@@ -6,7 +6,7 @@ import cyber from "../assets/cyber.svg";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header"
+import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 import ButtonText from "./ButtonText"
 
