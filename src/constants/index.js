@@ -11,12 +11,12 @@
       url: "games",
     },
     {
-      id: "3",
+      id: "2",
       title: "Галерея",
       url: "gallery",
     },
     {
-      id: "4",
+      id: "3",
       title: "Забронювати",
       onlyMobile: true,
       popup: true,
